@@ -42,6 +42,7 @@
                     if (endroitIndex != -1) { endroit = titre.substr(titre.indexOf(",") + 2); }
                     if (titreIndex != -1) { titre = titre.substring(0, titreIndex); }
                     // Formatage autre informations
+                    // let thumbnail = "https://placehold.co/150x150";
                     let thumbnail = "https://via.placeholder.com/150";
                     // let lien = article.link;
                     let contenu = article.content.rendered.substr(0, 200) + "...";
@@ -50,8 +51,11 @@
                     carte.classList.add("restapi__carte");
                     carte.innerHTML = `
                         <h3>${titre}</h3>
-                        <img href="${thumbnail}"></img>
-                        <p>${contenu}</p>
+                        <div class="img__contenu">
+                            <img href="${thumbnail}"></img>
+                            <div>https://via.placeholder.com/150</div>
+                            <p>${contenu}</p>
+                        </div>
                         <?php the_category() ?>
                     `;
                     restapi.appendChild(carte);
