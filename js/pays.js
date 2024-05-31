@@ -1,6 +1,4 @@
 (function () {
-    console.log("pays.js");
-
     let boutons_pays = document.querySelectorAll('.bouton__pays');
     // Vérification
     if (boutons_pays[0]) {
@@ -10,13 +8,13 @@
             bouton.addEventListener("mousedown", () => { attraper(index) })
         }
     }
-
+    // affichage par défaut
     // Variables pour la fonction
-    let pays;
+    let pays = "France";
     let url;
+    attraper(pays);
     function attraper(index) {
         pays = index;
-        console.log("pays" + index);
         url = "https://gftnth00.mywhc.ca/tim40/wp-json/wp/v2/posts?search=" + pays;
         // Effectuer la requête HTTP en utilisant fetch()
         fetch(url)
@@ -31,10 +29,8 @@
                 return response.json();
             })
             .then(function (data) {
-                console.log(data);
                 // La variable "data" contient la réponse JSON
                 let restapi = document.querySelector(".contenu__restapi__ef");
-                console.log(restapi);
                 restapi.innerHTML = "";
                 // Parcourir les données et afficher les articles correspondants
                 data.forEach(function (article) {

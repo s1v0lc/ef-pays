@@ -24,7 +24,7 @@ add_action('wp_enqueue_scripts', 'cg_enqueue2');
 function affichage_destinations(){
   $contenu = '
     <div class="ef__div">
-      <div class="restapi__boutons">
+      <div class="restapi__boutons__ef">
         <button id="pays_France" class="bouton__pays">France</button>
         <button id="pays_etats-unis" class="bouton__pays">États-Unis</button>
         <button id="pays_canada" class="bouton__pays">Canada</button>
