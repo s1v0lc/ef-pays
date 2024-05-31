@@ -25,21 +25,20 @@ function affichage_destinations(){
   $contenu = '
     <div class="ef__div">
       <div class="restapi__boutons">
-        <button id="pays_france" class="bouton__pays">France</button>
+        <button id="pays_France" class="bouton__pays">France</button>
         <button id="pays_etats-unis" class="bouton__pays">États-Unis</button>
         <button id="pays_canada" class="bouton__pays">Canada</button>
         <button id="pays_argentine" class="bouton__pays">Argentine</button>
-        <button id="pays_5" class="bouton__pays">Chili</button>
-        <button id="pays_6" class="bouton__pays">Belgique</button>
-        <button id="pays_7" class="bouton__pays">Maroc</button>
-        <button id="pays_8" class="bouton__pays">Mexique</button>
-        <button id="pays_9" class="bouton__pays">Japon</button>
-        <button id="pays_10" class="bouton__pays">Italie</button>
-        <button id="pays_11" class="bouton__pays">Islande</button>
-        <button id="pays_12" class="bouton__pays">Chine</button>
-        <button id="pays_13" class="bouton__pays">Grèce</button>
-        <button id="pays_14" class="bouton__pays">Suisse</button>
-        <button id="pays_1" class="bouton__pays btnX">X</button>
+        <button id="pays_chili" class="bouton__pays">Chili</button>
+        <button id="pays_belgique" class="bouton__pays">Belgique</button>
+        <button id="pays_Maroc" class="bouton__pays">Maroc</button>
+        <button id="pays_Mexique" class="bouton__pays">Mexique</button>
+        <button id="pays_Japon" class="bouton__pays">Japon</button>
+        <button id="pays_Italie" class="bouton__pays">Italie</button>
+        <button id="pays_Islande" class="bouton__pays">Islande</button>
+        <button id="pays_Chine" class="bouton__pays">Chine</button>
+        <button id="pays_Grèce" class="bouton__pays">Grèce</button>
+        <button id="pays_Suisse" class="bouton__pays">Suisse</button>
       </div>
       <div class="contenu__restapi__ef"></div>
     </div>';

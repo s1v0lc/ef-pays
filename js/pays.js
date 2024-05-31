@@ -18,7 +18,6 @@
         pays = index;
         console.log("pays" + index);
         url = "https://gftnth00.mywhc.ca/tim40/wp-json/wp/v2/posts?search=" + pays;
-        console.log(url);
         // Effectuer la requête HTTP en utilisant fetch()
         fetch(url)
             .then(function (response) {
